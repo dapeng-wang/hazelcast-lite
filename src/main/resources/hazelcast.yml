@@ -1,0 +1,17 @@
+hazelcast:
+    cluster-name: comesco
+    lite-member:
+        enabled: true
+    network:
+        port:
+            auto-increment: true
+            port-count: 100
+            port: 5701
+        join:
+            multicast:
+                enabled: false
+            tcp-ip:
+                enabled: true
+                interface: 127.0.0.1
+    listeners:
+        - com.dapeng.play.hazelcast.LiteMemberListener
